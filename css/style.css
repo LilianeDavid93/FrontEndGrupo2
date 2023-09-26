@@ -1,25 +1,103 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-body {
-  padding: 1000px;
-  background-color: rgb(65, 59, 11);
-  background-image: url("../img/banner.jpg");
-  margin-top: 0%;
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-attachment: fixed;
+* {
+  font-family: "Roboto", sans-serif;
 }
-.navbar {
-  margin-bottom: auto;
-  width: 100%;
-  height: 5rem;
-  background-color: hsla(0, 0%, 99%, 0.244);
+
+.bg-primary-color {
+  background-color: #d4e09b;
+}
+
+.bg-secondary-color {
+  background-color: #f6f4d2;
+}
+
+.bg-dark-color {
+  background-color: #050505;
+}
+
+.primary-color {
+  color: #cbdfbd;
+}
+
+.secondary-color {
+  color: #a44a3f;
+}
+
+/* NAVBAR */
+#navbar {
+  border-bottom: 2px solid #cbdfbd;
+}
+
+#navbar a {
+  color: #050505;
+  font-weight: bold;
+}
+
+#navbar a:hover {
+  color: #7a7a7a;
+}
+
+#navbar .active {
+  border-bottom: 1px solid #050505;
+}
+
+.navbar-brand {
   display: flex;
-  align-items: center;
+}
+
+.navbar-brand img {
+  width: 40px;
+}
+
+.navbar-brand span {
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-left: 0.5em;
+}
+
+#navbar-items .navbar-nav {
+  display: flex;
   justify-content: center;
-  gap: 1.2rem;
-  position: fixed;
-  top: 0%;
+  width: 100%;
+}
+
+#navbar-items .nav-item {
+  margin: 0 1em;
+}
+
+.apesentacao {
+  margin-top: 105px;
+}
+
+/* Configurando o banner */
+.img-banner {
+  margin-top: 104px;
+}
+
+/* Css do slider */
+#slider {
+  margin-top: 8em;
+  margin-bottom: 1em;
+}
+
+#slider .carousel-caption {
+  bottom: 2em;
+}
+
+#slider .carousel-caption h4 {
+  font-size: 2em;
+  text-shadow: black 2px 2px;
+}
+
+#slider .btn {
+  padding: 0.3 0.8em;
+  font-size: 1em;
+  margin-top: 1em;
+}
+
+.carousel-control-prev i,
+.carousel-control-next i {
+  color: black;
+  font-size: 3em;
 }

@@ -20,9 +20,14 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <!-- ícones bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
     <!--JS local-->
     <script src="index.js"></script>
-    <title>Grupo 2</title>
+    <title>#TRILHOU</title>
     <link
       rel="shortcut icon"
       href="./img/logo-trilhou.png"
@@ -30,31 +35,151 @@
     />
   </head>
   <body>
-    <!--Navbar menu-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Menu</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="index.html"
-              >Home</a
-            >
-            <a class="nav-link" href="contato.html" target="_blank">Contato</a>
-            <a class="nav-link" href="sobre.html" target="_blank">Sobre</a>
+    <header>
+      <!-- NAVBAR -->
+      <nav
+        class="navbar navbar-expand-lg fixed-top bg-primary-color"
+        id="navbar"
+      >
+        <div class="container py-3">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./img/logo-trilhou.png"
+              alt="logo trilhou"
+              width="40"
+              height="40"
+            />
+            <span>#TRILHOU</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-items"
+            aria-controls="navbar-items"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="bi bi-list"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-items">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Detalhes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Fale conosco</a>
+              </li>
+            </ul>
           </div>
         </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="apresentacao"></div>
+      <p>apresentacao</p>
+
+      <!-- inserção de banner -->
+      <img
+        class="img-banner"
+        src="./img/banner.jpg"
+        alt="banner travessia"
+        width="100%"
+      />
+
+      <!-- slider carrossel-->
+
+      <div class="container" id="slider-container">
+        <div class="carousel slide" id="slider" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              class="active"
+              data-bs-target="#slider"
+              data-bs-slide-to="0"
+              aria-current="true"
+              aria-label="Slide1"
+            ></button>
+
+            <button
+              type="button"
+              data-bs-target="#slider"
+              data-bs-slide-to="1"
+              aria-label="Slide2"
+            ></button>
+
+            <button
+              type="button"
+              data-bs-target="#slider"
+              data-bs-slide-to="2"
+              aria-label="Slide3"
+            ></button>
+          </div>
+          <!-- preenchendo o interior do slider -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="d-block w-100"
+                src="./img/travessia2.jpg"
+                alt="foto travessia"
+              />
+              <div class="carousel-caption">
+                <h4>Travessia Petrópolis x Teresópolis</h4>
+                <a href="#" class="btn btn-dark">Ver mais</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="./img/travessia3.jpg"
+                alt="foto travessia"
+              />
+              <div class="carousel-caption">
+                <h4>Travessia Petrópolis x Teresópolis</h4>
+                <a href="#" class="btn btn-dark">Ver mais</a>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="./img/travessia4.jpg"
+                alt="foto travessia"
+              />
+              <div class="carousel-caption">
+                <h4>Travessia Petrópolis x Teresópolis</h4>
+                <a href="#" class="btn btn-dark">Ver mais</a>
+              </div>
+            </div>
+          </div>
+          <!-- botões de ir e voltar no slider -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#slider"
+            data-bs-slide="prev"
+          >
+            <i class="bi bi-chevron-compact-left"></i>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#slider"
+            data-bs-slide="next"
+          >
+            <i class="bi bi-chevron-compact-right"></i>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
-    </nav>
+    </main>
+    <footer></footer>
   </body>
 </html>
