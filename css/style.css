@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-<<<<<<< HEAD
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -101,21 +100,4 @@
 .carousel-control-next i {
   color: black;
   font-size: 3em;
-=======
-header {
-  background-image: url("../img/banner.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-}
-#logotrilhou {
-  width: 5rem;
-}
-.navbar {
-  border-radius: 10px;
-  height: 30px;
-  width: 90%;
-  margin-left: 5%;
-  background-color: rgba(255, 255, 255, 0.662);
->>>>>>> f00835dfb8d804538d2a8bf30f637cdc25654171
 }
