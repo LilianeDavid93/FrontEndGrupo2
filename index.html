@@ -38,62 +38,65 @@
     <header>
 
       <div id="ww_8a3de1999f177" v='1.3' loc='id' a='{"t":"ticker","lang":"pt","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722"}'>Mais previsões: <a href="https://sharpweather.com/pt/rio_de_janeiro/" id="ww_8a3de1999f177_u" target="_blank">Previsão do tempo</a></div><script async src="https://app2.weatherwidget.org/js/?id=ww_8a3de1999f177"></script>
-      <!-- NAVBAR -->
-      <div class="sticky">
+      <!-- NAVBAR -->     
         <nav
-        class="navbar navbar-expand-lg sticky bg-primary-color"
-        id="navbar"
-      >
-        <div class="container py-3">
-          <a class="navbar-brand" href="#">
-            <img
-              src="./img/logo-trilhou.png"
-              alt="logo trilhou"
-              width="40"
-              height="40"
-            />
-            <span>#TRILHOU</span>
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbar-items"
-            aria-controls="navbar-items"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="bi bi-list"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbar-items">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="index.html"
-                  target="_blank"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="detalhes.html" target="_blank"
-                  >Detalhes</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="sobre.html" target="_blank">Sobre</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contato.html" target="_blank"
-                  >Fale conosco</a
-                >
-              </li>
-            </ul>
+        class="navbar navbar-expand-lg bg-primary-color"
+        id="navbar">
+     
+        <div class="container py-3 d-flex justify-content-between">
+            <div>
+              <a class="navbar-brand" href="#">
+                <img
+                  src="./img/logo-trilhou.png"
+                  alt="logo trilhou"
+                  width="40"
+                  height="40"
+                />
+                <span>#TRILHOU</span>
+              </a>
+            </div>
+            <div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbar-items"
+              aria-controls="navbar-items"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-items">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    target="_blank"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="detalhes.html" target="_blank"
+                    >Detalhes</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="sobre.html" target="_blank">Sobre</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contato.html" target="_blank"
+                    >Fale conosco</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
-    </div>
+    
     </header>
 
     <main>
@@ -101,7 +104,7 @@
       <!-- inserindo banner -->
       <div class="apresentacao">
         <h4>Nem só de museu vive Petrópolis</h4>
-        <a href="#" class="btn btn-light">Saiba mais</a>
+        <button class="btn btn-light">Saiba mais</button>
       </div>
 
       <!-- slider carrossel-->
@@ -269,5 +272,6 @@
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </footer>
+    <script src="./index.js"></script>
   </body>
 </html>

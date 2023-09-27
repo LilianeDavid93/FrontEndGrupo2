@@ -28,9 +28,15 @@
 #navbar {
   border-bottom: 2px solid #cbdfbd;
 }
+#nav-container {
+  display: block;
+}
 
 .sticky {
-  position: sticky;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
 }
 
 #navbar a {
@@ -71,24 +77,34 @@
 }
 
 .apresentacao {
+  position: relative;
   background-image: url(../img/banner.jpg);
+  justify-content: center;
+  justify-items: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 350px;
 }
+.apresentacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
 
 .apresentacao h4 {
   color: #cbdfbd;
-  display: flex;
-  justify-content: center;
-  justify-items: center;
   font-size: 4em;
   text-shadow: black 2px 2px;
-  text-align: center;
 }
-.apresentacao a {
-  /* centralizar o botão */
+.apresentacao button {
+  background-color: #d4e09b;
+  border-radius: 5px;
+  padding: 1em;
+  color: #000;
+  width: 150px;
 }
 
 /* Configurando o banner */
