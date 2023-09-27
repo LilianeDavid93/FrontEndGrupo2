@@ -23,7 +23,13 @@
 .secondary-color {
   color: #a44a3f;
 }
-
+.text-center {
+  color: #000000;
+  margin-top: 3rem;
+  margin-bottom: 5px;
+  font-size: 1em;
+  gap: 2rem;
+}
 /* NAVBAR */
 #navbar {
   border-bottom: 2px solid #cbdfbd;
