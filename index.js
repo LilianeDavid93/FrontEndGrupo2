@@ -17,6 +17,7 @@ function stickyEffect() {
     navbar.classList.remove("sticky");
   }
 }
+
 let isDarkMode = false;
 
 function setDarkMode() {
@@ -30,14 +31,36 @@ function setDarkMode() {
     document.getElementById("controle-dark-mode").innerText = "Disable";
     isDarkMode = true;
     return;
+  } else {
+    let body = document.getElementsByTagName("body")[0];
+    body.removeAttribute("class");
+    let nav = document.getElementsByTagName("nav")[0];
+    nav.setAttribute("class", "navbar navbar-expand-lg navbar-dark bg-primary");
+    let table = document.getElementsByTagName("table")[0];
+    table.setAttribute("class", "table");
+    document.getElementById("controle-dark-mode").innerText = "Active";
+    isDarkMode = false;
   }
-
-  let body = document.getElementsByTagName("body")[0];
-  body.removeAttribute("class");
-  let nav = document.getElementsByTagName("nav")[0];
-  nav.setAttribute("class", "navbar navbar-expand-lg navbar-dark bg-primary");
-  let table = document.getElementsByTagName("table")[0];
-  table.setAttribute("class", "table");
-  document.getElementById("controle-dark-mode").innerText = "Active";
-  isDarkMode = false;
 }
+
+async function getApiGitHub() {
+  await fetch("https://github.com/LilianeDavid93")
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+      const avatarUrl = data.avatar_url;
+
+      // const avatarImage = document.createElement("img");
+      // avatarImage.src = avatarUrl;
+      // avatarImage.style.width = "80px";
+      // avatarImage.style.height = "80px";
+      // avatarImage.style.borderRadius = "50%";
+      // avatarImage.style.boxShadow = "0px 4px 20px black";
+      // document.getElementById("liliane-avatar").appendChild(avatarImage);
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
+}
+
+getApiGitHub();
