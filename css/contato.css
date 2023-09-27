@@ -1,8 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
 /* Reset de estilos para remoção de margens e preenchimentos padrão */
 * {
   margin: 5;
   padding: 0;
   box-sizing: border-box;
+}
+.navbar-brand span {
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-left: 0.5em;
+}
+#nav-container {
+  display: block;
+}
+.navbar-brand span {
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-left: 0.5em;
 }
 
 /* Cores personalizadas */
@@ -11,20 +30,18 @@
   --secondary-color: #f6f4d2; /* Amarelo */
   --third-color: #cbdfbd;
   --accent-color: #f19c79; /* Laranja */
-  --background-color: #a44a3f; /* Marrom */
+  --background-color: #ffffff; /* Marrom */
   --third-color: #cbdfbd;
 }
 
 /* Estilos para o body e container principal */
 body {
-  font-family: Arial, sans-serif;
   background-color: var(--background-color);
 }
 
 .container {
   max-width: 500px;
   margin: 0 auto;
-  padding: 25px;
   background-color: var(--secondary-color);
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
