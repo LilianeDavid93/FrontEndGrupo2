@@ -46,12 +46,13 @@
 }
 
 #navbar a {
-  color: #050505;
+  color: rgb(0, 72, 1);
   font-weight: bold;
 }
 
 #navbar a:hover {
   color: #7a7a7a;
+  border-bottom: 2px solid rgb(0, 72, 1);
 }
 
 #navbar .active {

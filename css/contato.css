@@ -14,14 +14,19 @@
   font-weight: 700;
   font-size: 1.5em;
   margin-left: 0.5em;
+  color: rgb(0, 72, 1);
 }
 #nav-container {
   display: block;
 }
-.navbar-brand span {
+/* .navbar-brand span {
   font-weight: 700;
   font-size: 1.5em;
   margin-left: 0.5em;
+} */
+a {
+  text-decoration: none;
+  color: rgb(0, 72, 1);
 }
 
 /* Cores personalizadas */
@@ -42,6 +47,7 @@ body {
 .container {
   max-width: 500px;
   margin: 0 auto;
+  margin-top: 40px;
   background-color: var(--secondary-color);
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
