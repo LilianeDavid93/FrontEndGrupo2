@@ -1,0 +1,108 @@
+/* Reset de estilos para remoção de margens e preenchimentos padrão */
+* {
+  margin: 5;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Cores personalizadas */
+:root {
+  --primary-color: #d4e09b; /* Verde */
+  --secondary-color: #f6f4d2; /* Amarelo */
+  --third-color: #cbdfbd;
+  --accent-color: #f19c79; /* Laranja */
+  --background-color: #a44a3f; /* Marrom */
+  --third-color: #cbdfbd;
+}
+
+/* Estilos para o body e container principal */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 25px;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para o cabeçalho (h1) */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--primary-color);
+}
+
+/* Estilos para o formulário */
+form {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+}
+
+/* Estilos para o campo de legenda */
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: var(--secondary-color);
+}
+
+legend {
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
+/* Estilos para a lista de itens do formulário */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+/* Estilos para rótulos e campos de entrada */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: var(--accent-color);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+  margin-bottom: 15px;
+}
+
+/* Estilos para o botão de envio */
+button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: var(--accent-color);
+  box-shadow: inset 2px 2px 2px var(--secondary-color);
+  text-shadow: none;
+}
