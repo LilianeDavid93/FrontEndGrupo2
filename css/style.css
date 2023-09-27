@@ -17,7 +17,7 @@
 }
 
 .primary-color {
-  color: #cbdfbd;
+  color: black;
 }
 
 .secondary-color {
@@ -27,6 +27,10 @@
 /* NAVBAR */
 #navbar {
   border-bottom: 2px solid #cbdfbd;
+}
+
+.sticky {
+  position: sticky;
 }
 
 #navbar a {
@@ -70,9 +74,21 @@
   background-image: url(../img/banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: 100px;
   width: 100%;
-  height: 300px;
+  height: 350px;
+}
+
+.apresentacao h4 {
+  color: #cbdfbd;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  font-size: 4em;
+  text-shadow: black 2px 2px;
+  text-align: center;
+}
+.apresentacao a {
+  /* centralizar o botão */
 }
 
 /* Configurando o banner */
@@ -109,6 +125,39 @@
 
 .fixed {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 30px;
+  right: 30px;
+}
+
+.textodivisor {
+  text-align: justify;
+  margin: 10px;
+  padding: 6px;
+}
+
+/* MINI BANNERS */
+#mini-banners {
+  margin-bottom: 4em;
+}
+
+#mini-banners .card {
+  padding: 2em 0.3em;
+  border-radius: 10px;
+}
+
+#mini-banners i {
+  font-size: 4em;
+}
+
+#mini-banners .card-title {
+  margin-bottom: 1.5em;
+}
+
+#mini-banners .btn {
+  margin-top: 1.5em;
+  padding: 0.6em 1.2em;
+}
+
+#mini-banners .card {
+  margin-bottom: 1em;
 }
