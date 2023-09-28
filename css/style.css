@@ -189,16 +189,34 @@ footer {
   background-color: rgba(200, 157, 79, 0.668);
   margin-top: 0%;
 }
+footer img {
+  margin-left: 50px;
+  margin-top: 50px;
+  height: 70px;
+}
 footer li {
   color: brown;
+}
+footer p {
+  padding: 0%;
+  margin: 0%;
+  margin-left: 75%;
+  font-size: small;
+  color: #000;
 }
 .bi.bi-facebook {
   color: #5400f1;
 }
-
 p {
   margin: 25px;
 }
 #slider-container {
   width: 40%;
+}
+footer nav {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+#barra {
+  padding: 0%;
 }
