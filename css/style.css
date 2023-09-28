@@ -237,3 +237,13 @@ footer nav {
 .switch-list {
   padding: 30px;
 }
+h3 {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.faleC {
+  display: block;
+  justify-content: left;
+  margin-left: 50px;
+  margin-bottom: 30px;
+}

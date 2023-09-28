@@ -115,27 +115,26 @@
     E-mail: contato@trilhou.com.br
 
     <br/><br/>
-    Ou:
+    <b>Nos envie suas dúvidas:</b>
   </p>
 
-  <div class="input-group mb-3">
-    <span class="input-group-text" id="inputGroup-sizing-default">Nome</span>
-    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+  <form id="meuFormulario">
+    <div class="input-group mb-3 " >
+      <span class="input-group-text" id="inputGroup-sizing-default">Nome</span>
+      <input type="text" class="form-control" id="nome"  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </div>
+  
+  <div class="input-group mb-3"  >
+    <span class="input-group-text" id="inputGroup-sizing-default">E-mail</span>
+    <input type="text" class="form-control" id="email" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
   </div>
-
-<div class="input-group mb-3">
-  <span class="input-group-text" id="inputGroup-sizing-default">E-mail</span>
-  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-</div>
-
-<div class="input-group input-group-lg">
-  <span class="input-group-text" id="inputGroup-sizing-lg">Digite sua mensagem</span>
-  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-</div>
-
-<button class="btn btn-light">Enviar</button>
-
-
+  
+  <div class="input-group input-group-lg" >
+    <span class="input-group-text" id="inputGroup-sizing-lg">Deixe sua mensagem aqui:</span>
+    <input type="text" class="form-control" id="mensagem" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+  </div>
+  </form>
+  <button onclick="submit(event)" class="btn btn-light d-flex align-items-center p-100" id="botaoForm">Enviar</button>
 <a href="#">
   <div class="fixed">
     <img

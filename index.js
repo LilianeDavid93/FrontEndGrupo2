@@ -43,30 +43,31 @@ function setDarkMode() {
   }
 }
 
-function leituraEscrita() {
-  alert("Clicou no Disket");
-}
+document.getElementById("meuFormulario");
+function submit(event) {
+  event.preventDefault(); // Evita o envio padrão do formulário.
 
-function salvaDados() {
-  const nome = document.querySelector("#nome");
-  const email = document.querySelector("#email");
-  const nomeHelper = document.querySelector(".nomeHelper");
+  // Obtenha os valores dos campos.
+  let nome = document.getElementById("nome").value;
+  console.log(document.getElementById("nome").value);
+  let email = document.getElementById("email").value;
+  let mensagem = document.getElementById("mensagem").value;
 
-  if (nome.value === "" || passwd.value === "") {
-    console.log("Preencha todos os campos");
-    nomeHelper.style.display = "block";
-    return;
-  } else {
-    const user = {
-      email: nome.value,
-      nome: nome.value,
-    };
-    localStorage.setItem("user", JSON.stringify(user));
-    nomeHelper.style.display = "none";
-    nome.value = "";
-    passwd.value = "";
+  // Verifique se algum campo está vazio.
+  if (nome === "" || email === "" || mensagem === "") {
+    alert("Por favor, preencha todos os campos.");
+    return; // Encerre a função se houver campos vazios.
   }
 
-  console.log("Nome: ", passwd.value);
-  console.log("Email: ", email.value);
+  // Armazene os dados no localStorage.
+  let dados = {
+    nome: nome,
+    email: email,
+    mensagem: mensagem,
+  };
+  console.log(dados);
+  localStorage.setItem("dadosFormulario", JSON.stringify(dados));
+
+  // Resetar os campos do formulário.
+  document.getElementById("meuFormulario").reset();
 }
