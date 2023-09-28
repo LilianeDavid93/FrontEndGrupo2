@@ -199,3 +199,6 @@ footer li {
 p {
   margin: 25px;
 }
+#slider-container {
+  width: 40%;
+}
