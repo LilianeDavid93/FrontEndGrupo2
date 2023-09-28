@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.bg-primary-color {
+  background-color: #d4e09b;
+}
+
+.bg-secondary-color {
+  background-color: #f6f4d2;
+}
+
+.bg-dark-color {
+  background-color: #050505;
+}
+
+.primary-color {
+  color: black;
+}
+
+.secondary-color {
+  color: #a44a3f;
+}
+.text-center {
+  color: #000000;
+  margin-top: 3rem;
+  margin-bottom: 5px;
+  font-size: 1em;
+  gap: 2rem;
+}
+/* NAVBAR */
+#navbar {
+  border-bottom: 2px solid #cbdfbd;
+}
+#nav-container {
+  display: block;
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+#navbar a {
+  color: rgb(0, 72, 1);
+  font-weight: bold;
+}
+
+#navbar a:hover {
+  color: #7a7a7a;
+  border-bottom: 3px solid rgb(0, 72, 1);
+}
+
+#navbar .active {
+  border-bottom: 1px solid #050505;
+}
+
+.navbar-brand {
+  display: flex;
+}
+
+.navbar-brand img {
+  width: 40px;
+}
+
+.navbar-brand span {
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-left: 0.5em;
+}
+
+#navbar-items .navbar-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#navbar-items .nav-item {
+  margin: 0 1em;
+}
+
+.apresentacao {
+  position: relative;
+  background-image: url(../img/banner.jpg);
+  justify-content: center;
+  justify-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 350px;
+}
+.apresentacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.apresentacao h4 {
+  color: #cbdfbd;
+  font-size: 4em;
+  text-shadow: black 2px 2px;
+}
+.apresentacao button {
+  background-color: #d4e09b;
+  border-radius: 5px;
+  padding: 1em;
+  color: #000;
+  width: 150px;
+}
+
+/* Configurando o banner */
+.img-banner {
+  margin-top: 104px;
+}
+
+/* Css do slider */
+#slider {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+#slider .carousel-caption {
+  bottom: 2em;
+}
+
+#slider .carousel-caption h4 {
+  font-size: 2em;
+  text-shadow: black 2px 2px;
+}
+
+#slider .btn {
+  padding: 0.3 0.8em;
+  font-size: 1em;
+  margin-top: 1em;
+}
+
+.carousel-control-prev i,
+.carousel-control-next i {
+  color: black;
+  font-size: 3em;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+.textodivisor {
+  text-align: justify;
+  margin: 10px;
+  padding: 6px;
+}
+
+/* MINI BANNERS */
+#mini-banners {
+  margin-bottom: 4em;
+}
+
+#mini-banners .card {
+  padding: 2em 0.3em;
+  border-radius: 10px;
+}
+
+#mini-banners i {
+  font-size: 4em;
+}
+
+#mini-banners .card-title {
+  margin-bottom: 1.5em;
+}
+
+#mini-banners .btn {
+  margin-top: 1.5em;
+  padding: 0.6em 1.2em;
+}
+
+#mini-banners .card {
+  margin-bottom: 1em;
+}
+
+footer {
+  background-color: rgba(200, 157, 79, 0.668);
+  margin-top: 0%;
+}
+footer img {
+  margin-left: 50px;
+  margin-top: 50px;
+  height: 70px;
+}
+footer li {
+  color: brown;
+}
+footer p {
+  padding: 0%;
+  margin: 0%;
+  margin-left: 75%;
+  font-size: small;
+  color: #000;
+}
+.bi.bi-facebook {
+  color: #5400f1;
+}
+
+h1 {
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+p {
+  margin: 25px;
+}
+#slider-container {
+  width: 40%;
+}
+footer nav {
+  margin-top: 30px;
+  margin-left: 130px;
+}
+#barra {
+  padding-top: 10px;
+}
+.float-left {
+  float: left;
+}
+
+.texto-footer ul {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 10px 20px;
+  color: #e63946;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.switch-list {
+  padding: 30px;
+}
+
+h3 {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.faleC {
+  display: block;
+  justify-content: left;
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
