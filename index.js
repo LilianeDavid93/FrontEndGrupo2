@@ -42,3 +42,31 @@ function setDarkMode() {
     isDarkMode = false;
   }
 }
+
+function leituraEscrita() {
+  alert("Clicou no Disket");
+}
+
+function salvaDados() {
+  const nome = document.querySelector("#nome");
+  const email = document.querySelector("#email");
+  const nomeHelper = document.querySelector(".nomeHelper");
+
+  if (nome.value === "" || passwd.value === "") {
+    console.log("Preencha todos os campos");
+    nomeHelper.style.display = "block";
+    return;
+  } else {
+    const user = {
+      email: nome.value,
+      nome: nome.value,
+    };
+    localStorage.setItem("user", JSON.stringify(user));
+    nomeHelper.style.display = "none";
+    nome.value = "";
+    passwd.value = "";
+  }
+
+  console.log("Nome: ", passwd.value);
+  console.log("Email: ", email.value);
+}
