@@ -52,7 +52,7 @@
 
 #navbar a:hover {
   color: #7a7a7a;
-  border-bottom: 2px solid rgb(0, 72, 1);
+  border-bottom: 3px solid rgb(0, 72, 1);
 }
 
 #navbar .active {
@@ -183,4 +183,19 @@
 
 #mini-banners .card {
   margin-bottom: 1em;
+}
+
+footer {
+  background-color: rgba(200, 157, 79, 0.668);
+  margin-top: 0%;
+}
+footer li {
+  color: brown;
+}
+.bi.bi-facebook {
+  color: #5400f1;
+}
+
+p {
+  margin: 25px;
 }
