@@ -207,6 +207,12 @@ footer p {
 .bi.bi-facebook {
   color: #5400f1;
 }
+
+h1 {
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
 p {
   margin: 25px;
 }
@@ -237,6 +243,7 @@ footer nav {
 .switch-list {
   padding: 30px;
 }
+
 h3 {
   margin-top: 15px;
   margin-left: 15px;
